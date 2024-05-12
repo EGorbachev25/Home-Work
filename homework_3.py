@@ -4,7 +4,6 @@ num1 = float(input("Enter first number: "))
 operator = input("Enter a symbol  (+,-,*,/): ")
 num2 = float(input("Enter second number: "))
 
-
 if operator == "+":
     result = num1 + num2
     print(result)
@@ -61,4 +60,3 @@ else:
     result = [list_1, list_2]
 
 print(result)
-
