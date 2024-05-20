@@ -61,8 +61,8 @@ while True:
         case _:
             print("Error: Invalid operation")
 
-    continue_calculation = input("Do you want to perform another calculation? (yes/y to continue): ").lower()
-    if continue_calculation != "yes" and continue_calculation != "y":
+    continue_calc = input("Do you want to continue? (yes/y to continue): ")
+    if continue_calc.lower() not in ('yes', 'y'):
         break
 
 
