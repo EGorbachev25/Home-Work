@@ -1,8 +1,8 @@
 ### ДЗ 5.1. Ім'я змінної
 
+
 import string
 import keyword
-
 
 variable_name = input("Enter variable name: ")
 
@@ -39,29 +39,32 @@ while True:
     operator = input("Enter a symbol (+, -, *, /): ")
     num2 = float(input("Enter second number: "))
 
-    if operator == "+":
-        result = num1 + num2
-        print(result)
+    match operator:
+        case "+":
+            result = num1 + num2
+            print(result)
 
-    elif operator == "-":
-        result = num1 - num2
-        print(result)
+        case "-":
+            result = num1 - num2
+            print(result)
 
-    elif operator == "*":
-        result = num1 * num2
-        print(result)
+        case "*":
+            result = num1 * num2
+            print(result)
 
-    elif operator == "/":
-        if num2 != 0:
-            print(num1 / num2)
-        else:
-            print("Error: division by zero")
-    else:
-        print("Error: Invalid operation")
+        case "/":
+            if num2 != 0:
+                result = num1 / num2
+                print(result)
+            else:
+                print("Error: division by zero")
+        case _:
+            print("Error: Invalid operation")
 
     continue_calculation = input("Do you want to perform another calculation? (yes/y to continue): ").lower()
     if continue_calculation != "yes" and continue_calculation != "y":
         break
+
 
 
 ### ДЗ 5.3. hashtag
